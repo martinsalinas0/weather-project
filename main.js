@@ -1,9 +1,9 @@
 // const searchBtn = document.querySelector("#search-btn");
 // let searchInput = document.querySelector("#search-input").value;
-// const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&APPID=a4396d434551ba845da6a657caa7cd7c`;
-// const apiKey = "a4396d434551ba845da6a657caa7cd7c";
+// const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&APPID=
 
-// api.openweathermap.org/data/2.5/forecast/daily?q=Austin&cnt=usa&appid=a4396d434551ba845da6a657caa7cd7c
+
+// api.openweathermap.org/data/2.5/forecast/daily?q=Austin&cnt=usa&appid=
 
 document.querySelector("#search-btn").addEventListener('click', function(){ 
     const searchInput = document.querySelector('.search-input').value; 
@@ -18,7 +18,7 @@ document.querySelector("#search-btn").addEventListener('click', function(){
 //fetchData();
 
 async function fetchData(searchInput) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&APPID=a4396d434551ba845da6a657caa7cd7c&units=imperial`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&APPID=units=imperial`;
 
   try {
     const response = await fetch(url);
