@@ -2,79 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Weather Project</title>
   </head>
   <body>
-    <div class="container">
-      <div class="col-10">
-        <div class="page-header justify-content-center">
+    <div class="container mt-4">
+      <!--title area-->
+      <div class="row">
+        <div class="text-center">
           <h1>Weather Project</h1>
           <hr />
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <!--search bar-->
+    <div class="container mt-4">
+      <!--Search box area-->
       <div class="row justify-content-center">
-        <div class="col-md-6 mb-4">
-          <form class="form-inline">
+        <div class="col-md-6">
+          <form class="d-flex">
             <input
               type="text"
-              class="form-control flex-grow-1 mr-4"
-              id="city-search-query"
+              class="form-control flex-grow-1 me-2 search-input"
               placeholder="Search City"
+              id="search-input"
             />
-            <button type="submit" class="btn btn-primary search">Search</button>
+            <button
+              type="submit"
+              class="btn btn-primary search-btn"
+              id="search-btn"
+            >
+              Search
+            </button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <!--current weather area-->
+    <!--current weather area-->
+    <div class="temp-info"></div>
+
+    <!--future forecast area-->
+    <div class="five-day"></div>
+    <div class="container mt-4">
       <div class="row">
-        <div class="today">
-          <h1>66</h1>
-          <h2>Austin</h2>
-          <h4>Clouds</h4>
-          <p>☁️</p>
+        <div class="col">
+          <!--Column 1 -->
+          <div class="list-group-item list-group-flush text-center">
+            <h5 class="text-center">Clouds</h5>
+            <p class="mb-1">65°F</p>
+            <p class="mb-1">
+              <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" />
+            </p>
+            <small>Friday</small>
+          </div>
+        </div>
+        <div class="col">
+          <!--Column 2 -->
+          <div class="list-group-item list-group-flush text-center">
+            <h5 class="text-center">Clouds</h5>
+            <p class="mb-1">65°F</p>
+            <p class="mb-1">
+              <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" />
+            </p>
+            <small>Friday</small>
+          </div>
+        </div>
+        <div class="col">
+          <!--Column 3 -->
+          <div class="list-group-item list-group-flush text-center">
+            <h5 class="text-center">Clouds</h5>
+            <p class="mb-1">65°F</p>
+            <p class="mb-1">
+              <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" />
+            </p>
+            <small>Friday</small>
+          </div>
+        </div>
+        <div class="col">
+          <!--Column 4 -->
+          <div class="list-group-item list-group-flush text-center">
+            <h5 class="text-center">Clouds</h5>
+            <p class="mb-1">65°F</p>
+            <p class="mb-1">
+              <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" />
+            </p>
+            <small>Friday</small>
+          </div>
+        </div>
+        <div class="col">
+          <!--Column 5 -->
+          <div class="list-group-item list-group-flush text-center">
+            <h5 class="text-center">Clouds</h5>
+            <p class="mb-1">65°F</p>
+            <p class="mb-1">
+              <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" />
+            </p>
+            <small>Friday</small>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <!--future forecast-->
-      <div class="row">
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-      </div>
-    </div>
-
     <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-
     <script src="main.js"></script>
   </body>
 </html>
